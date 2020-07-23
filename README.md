@@ -15,6 +15,8 @@ We are a non-patisan organisation. Our goal is to provide an easy to use interfa
 
 Unless specified all data comes from [House of the Oireachtas - Open Data](https://www.oireachtas.ie/en/open-data/)
 
+- Dail Constituencynumber of seats added manually
+
 ## Contribute
 
 If you are interested in getting involved in the development of this app get in touch - [info@howtheyvoted.ie](mailto:info@howtheyvoted.ie)
