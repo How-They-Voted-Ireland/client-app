@@ -23,4 +23,4 @@ jobs:
       with:
         ACCESS_TOKEN: ${{ secrets.GH_DEPLOY }}
         BRANCH: gh-pages
-        FOLDER: __sapper__/export/client-app
+        FOLDER: __sapper__/export
