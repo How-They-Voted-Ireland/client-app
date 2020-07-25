@@ -5,6 +5,7 @@ An easy way to see how your TDs are voting in the Dail
 - Pick a TD from a list
 - Filter TD list by constituency or name
 - See details of TD and how they've voted on issues
+- Read an abridged version of the topic being debated and voted on in plain English
 - See stats and trends for a TD
 
 ## Ethos
@@ -18,6 +19,12 @@ Unless specified all data comes from [House of the Oireachtas - Open Data](https
 - Dail Constituencynumber of seats added manually
 
 ## Contribute
+
+### Content
+
+The app will feature a list of Dail debates and bills. These are often difficult to read and understand without context. Contributions are sought for simplified, unbiased explanations of these along with classification into categories such as health, housing, childcare, policing, etc...
+
+### Code
 
 If you are interested in getting involved in the development of this app get in touch - [info@howtheyvoted.ie](mailto:info@howtheyvoted.ie)
 
