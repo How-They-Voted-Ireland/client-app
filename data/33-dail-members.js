@@ -1,4 +1,4 @@
-[
+export default [
   {
     "memberCode": "Chris-Andrews.D.2007-06-14",
     "lastName": "Andrews",
