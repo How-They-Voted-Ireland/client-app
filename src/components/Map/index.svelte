@@ -1,14 +1,9 @@
 <script>
-  import { hoveredConstituency, selectedConstituency } from '../../store/appState';
+  import { selectedConstituency } from '../../store/appState';
   import constituencies from './constituencyPaths';
 
-  const testFunc = event => {
+  const setConstituency = event => {
     selectedConstituency.set(event.target.id);
-  }
-
-  const testFunc2 = event => {
-    // console.log(event.target.id)
-    // hoveredConstituency.set(event.target.id);
   }
 
   $selectedConstituency;
@@ -30,8 +25,6 @@
 </style>
 
 <svg
-  on:click={testFunc}
-  on:mousemove={testFunc2}
   height="149.22495mm"
   viewBox="0 0 180.19859 149.22494">
   <g transform="translate(-310.62091,2.1166666)">
@@ -45,8 +38,7 @@
           || $selectedConstituency === 'dublin' && (id.includes('dun') || id.includes('dub'))
           || ($selectedConstituency.includes('dun') || $selectedConstituency.includes('dub')) && id === 'dublin'
         }
-        on:click={testFunc}
-        on:mouseover={testFunc2}
+        on:click={setConstituency}
       />
      {/each}
   </g>
