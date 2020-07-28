@@ -75,7 +75,7 @@ export default {
     name: "Dublin West",
     seats: 4,
   },
-  "dun-laoghaire": {
+  "dún-laoghaire": {
     name: "Dún Laoghaire",
     seats: 4,
   },
