@@ -5,6 +5,7 @@ An easy way to see how your TDs are voting in the Dail
 - Pick a TD from a list
 - Filter TD list by constituency or name
 - See details of TD and how they've voted on issues
+- Search for a Bill
 - Read an abridged version of the topic being debated and voted on in plain English
 - See stats and trends for a TD
 
