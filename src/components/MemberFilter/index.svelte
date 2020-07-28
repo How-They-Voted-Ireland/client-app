@@ -13,8 +13,10 @@
   }
 </style>
 
-<input
-  type="search"
-  placeholder="Filter list by typing TD name"
-  bind:value={$currentSearch}
-/>
+<div>
+  <input
+    type="search"
+    placeholder="Filter list by typing TD name"
+    bind:value={$currentSearch}
+  />
+</div>

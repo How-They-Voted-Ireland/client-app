@@ -28,12 +28,22 @@
 </script>
 
 <style lang="scss">
+  ul {
+    height: calc(100% - 10px);
+    overflow-y: scroll;
+    margin: 10px 0;
+  }
 
+  .member-name {
+    font-size: 2rem;
+    cursor: pointer;
+    text-align: center
+  }
 </style>
 
 <ul>
   {#each filteredMembers as { constituencyCode, lastName, firstName }}
-    <li>
+    <li class="member-name">
       {lastName}, {firstName}
     </li>
   {/each}

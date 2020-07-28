@@ -11,7 +11,9 @@
 
 <style lang="scss">
   svg {
-    width: 100%
+    width: 100%;
+    height: auto;
+    max-height: 100%;
   }
   
   path {
@@ -25,7 +27,6 @@
 </style>
 
 <svg
-  height="149.22495mm"
   viewBox="0 0 180.19859 149.22494">
   <g transform="translate(-310.62091,2.1166666)">
      {#each constituencies as { svgPath, id, noTransform }}
@@ -59,4 +60,4 @@
   />
 </svg>
 
-<p>This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license. Originally created by <a href="https://commons.wikimedia.org/wiki/User:Erinthecute">Erinthecute</a></p>
+<!-- <p>This file is licensed under the Creative Commons Attribution-Share Alike 4.0 International license. Originally created by <a href="https://commons.wikimedia.org/wiki/User:Erinthecute">Erinthecute</a></p> -->

@@ -1,3 +1,6 @@
+<script>
+</script>
+
 <style lang="scss" global>
   header, footer {
     padding: 20px 10px;
@@ -16,6 +19,7 @@
 
   main {
     flex: 1;
+    min-height: 0;
   }
 </style>
 
