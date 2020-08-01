@@ -5,6 +5,14 @@
   --primary-light: #eeeeee;
 }
 
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans",
     "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
@@ -12,7 +20,6 @@ body {
   line-height: 1.5;
   color: var(--primary-dark);
   height: 100vh;
-  overflow: hidden;
 }
 
 h1,
@@ -31,8 +38,10 @@ h6 {
 h1 {
   font-size: 4rem;
   text-transform: uppercase;
+}
 
-  @media (max-width: $mobileBp) {
+@media (max-width: 640px) {
+  h1 {
     font-size: 3rem;
   }
 }
