@@ -36,8 +36,8 @@
         transform={!noTransform ? "scale(0.26458333)" : null}
         class:selected={
           id === $selectedConstituency
-          || $selectedConstituency === 'dublin' && (id.includes('dun') || id.includes('dub'))
-          || ($selectedConstituency.includes('dun') || $selectedConstituency.includes('dub')) && id === 'dublin'
+          || $selectedConstituency === 'dublin' && (id.includes('dún') || id.includes('dub'))
+          || ($selectedConstituency.includes('dún') || $selectedConstituency.includes('dub')) && id === 'dublin'
         }
         on:click={setConstituency}
       />

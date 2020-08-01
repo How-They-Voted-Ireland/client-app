@@ -38,46 +38,57 @@ export default {
   "dublin-bay-north": {
     name: "Dublin Bay North",
     seats: 5,
+    region: "dublin"
   },
   "dublin-bay-south": {
     name: "Dublin Bay South",
     seats: 4,
+    region: "dublin"
   },
   "dublin-central": {
     name: "Dublin Central",
     seats: 4,
+    region: "dublin"
   },
   "dublin-fingal": {
     name: "Dublin Fingal",
     seats: 5,
+    region: "dublin"
   },
   "dublin-mid-west": {
     name: "Dublin Mid-West",
     seats: 4,
+    region: "dublin"
   },
   "dublin-north-west": {
     name: "Dublin North-West",
     seats: 3,
+    region: "dublin"
   },
   "dublin-rathdown": {
     name: "Dublin Rathdown",
     seats: 3,
+    region: "dublin"
   },
   "dublin-south-central": {
     name: "Dublin South-Central",
     seats: 4,
+    region: "dublin"
   },
   "dublin-south-west": {
     name: "Dublin South-West",
     seats: 5,
+    region: "dublin"
   },
   "dublin-west": {
     name: "Dublin West",
     seats: 4,
+    region: "dublin"
   },
   "dún-laoghaire": {
     name: "Dún Laoghaire",
     seats: 4,
+    region: "dublin"
   },
   "galway-east": {
     name: "Galway East",

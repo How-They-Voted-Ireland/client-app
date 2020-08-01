@@ -10,9 +10,13 @@
       return true;
     }
 
-    filteredMembers = members.filter(({ constituencyCode }) => (
-      value === constituencyCode.toLowerCase())
-    );
+    filteredMembers = members.filter(({ constituencyCode }) => {
+      let code = constituencyCode.toLowerCase();
+
+      return value === code
+        || value === 'dublin' && (code.includes('dún') || code.includes('dub'))
+        || (value.includes('dún') || value.includes('dub')) && code === 'dublin';
+    });
   });
   
   currentSearch.subscribe(value => {
