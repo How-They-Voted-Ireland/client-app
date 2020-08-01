@@ -70,11 +70,11 @@
 
 <div class="app" bind:clientWidth={appWidth}>
 	<section class="filters">
-		{#if appWidth <= 640}
+<!-- 		{#if appWidth <= 640}
 			<div class="show-map-button">
 				<MapButton />
 			</div>
-		{/if}
+		{/if} -->
 		<div class="constituency-select-control">
 			<SelectConstituency />
 		</div>
