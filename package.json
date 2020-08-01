@@ -1,6 +1,8 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "how-they-voted-client-app",
+  "description": "How They Voted",
+  "license": "GPLv3",
+  "private": true,
   "version": "0.0.1",
   "scripts": {
     "dev": "sapper dev",
