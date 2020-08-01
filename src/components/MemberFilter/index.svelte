@@ -16,7 +16,7 @@
 <div>
   <input
     type="search"
-    placeholder="Filter list by typing TD name"
+    placeholder="Enter TD name"
     bind:value={$currentSearch}
   />
 </div>

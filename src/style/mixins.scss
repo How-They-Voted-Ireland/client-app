@@ -1,1 +1,30 @@
+// https://davidwalsh.name/write-media-queries-sass
 
+$mobileBp: 640px;
+$tablet-portraitBp: 768px;
+$tablet-landscapeBp: 1024px;
+$desktopBp: 1280px;
+
+@mixin mobile {
+  @media (max-width: $mobileBp) {
+    @content;
+  }
+}
+
+@mixin tablet-portrait {
+  @media (max-width: $tablet-portraitBp) {
+    @content;
+  }
+}
+
+@mixin tablet-landscape {
+  @media (max-width: $tablet-landscapeBp) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: $desktopBp) {
+    @content;
+  }
+}
