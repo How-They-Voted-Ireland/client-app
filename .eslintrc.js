@@ -16,13 +16,15 @@ module.exports = {
     'import',
     'node',
     'promise',
-    'standard',
     'svelte3'
   ],
   overrides: [
     {
       files: ['*.svelte'],
-      processor: 'svelte3/svelte3'
+      processor: 'svelte3/svelte3',
+      rules: {
+        'import/first': 'off'
+      }
     }
   ],
   globals: {

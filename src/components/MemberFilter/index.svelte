@@ -1,7 +1,5 @@
 <script>
   import { currentSearch } from '../../store/appState';
-
-  $currentSearch;
 </script>
 
 <style>
@@ -18,5 +16,6 @@
     type="search"
     placeholder="Enter TD name"
     bind:value={$currentSearch}
+    aria-label="Search for a TD"
   />
 </div>

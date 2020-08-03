@@ -1,8 +1,6 @@
 <script>
   import { selectedConstituency } from '../../store/appState';
   import constituencies from '../../../data/33-dail-constituencies';
-
-  $selectedConstituency;
 </script>
 
 <style>
@@ -14,17 +12,16 @@
     text-align-last: center;
     -moz-text-align-last: center;
   }
-
 </style>
 
-<select name="constituencies" bind:value={$selectedConstituency}>
+<select name="constituencies" bind:value={$selectedConstituency} aria-label="Select a constituency from the list">
   <option value="">Select a Constituency</option>
   {#each Object.entries(constituencies) as [key, { name }]}
     <option
-      value={key}
-      selected={key === $selectedConstituency}
+      value={ key }
+      selected={ key === $selectedConstituency }
     >
-      {name}
+      { name }
     </option>
   {/each}
 </select>
