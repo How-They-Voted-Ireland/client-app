@@ -17,7 +17,8 @@ We are a non-patisan organisation. Our goal is to provide an easy to use interfa
 
 Unless specified all data comes from [House of the Oireachtas - Open Data](https://www.oireachtas.ie/en/open-data/)
 
-- Dail Constituencynumber of seats added manually
+- Dail Constituency number of seats added manually
+- Dail debates scraped from oireachtas.ie as API offline
 
 ## Contribute
 
