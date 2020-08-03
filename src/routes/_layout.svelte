@@ -1,6 +1,3 @@
-<script>
-</script>
-
 <style lang="scss" global>
   @import '../style/mixins.scss';
   

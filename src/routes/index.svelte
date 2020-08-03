@@ -1,16 +1,14 @@
 <script>
-	import { onMount } from "svelte";
-
 	import Map from '../components/Map/index.svelte';
 	import MembersList from '../components/MembersList/index.svelte';
 	import SelectConstituency from '../components/SelectConstituency/index.svelte';
 	import MemberFilter from '../components/MemberFilter/index.svelte';
-	import MapButton from '../components/MapButton/index.svelte';
+	// import MapButton from '../components/MapButton/index.svelte';
 
 	let appWidth;
 </script>
 
-<style lang="scss">
+<style type="text/scss" lang="scss">
 	@import '../style/mixins.scss';
 
 	.app {
