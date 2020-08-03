@@ -216,9 +216,7 @@ module.exports = {
     'node/no-deprecated-api': 'error',
     'node/process-exit-as-throw': 'error',
 
-    'promise/param-names': 'error',
-
-    'standard/no-callback-literal': 'error'
+    'promise/param-names': 'error'
   },
   settings: {
     'svelte3/ignore-styles': (attr) => {

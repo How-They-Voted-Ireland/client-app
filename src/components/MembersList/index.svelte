@@ -11,11 +11,11 @@
     }
 
     filteredMembers = members.filter(({ constituencyCode }) => {
-      let code = constituencyCode.toLowerCase();
+      const code = constituencyCode.toLowerCase();
 
-      return value === code
-        || value === 'dublin' && (code.includes('dún') || code.includes('dub'))
-        || (value.includes('dún') || value.includes('dub')) && code === 'dublin';
+      return value === code ||
+        (value === 'dublin' && (code.includes('dún') || code.includes('dub'))) ||
+        ((value.includes('dún') || value.includes('dub')) && code === 'dublin');
     });
   });
   
@@ -37,12 +37,22 @@
     cursor: pointer;
     text-align: center
   }
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 </style>
 
 <ul>
-  {#each filteredMembers as { constituencyCode, lastName, firstName }}
+  {#each filteredMembers as { memberCode, lastName, firstName, fullName }}
     <li class="member-name">
-      {lastName}, {firstName}
+      <a href="member/{memberCode}" title="Link to voting profile of {fullName}">
+        {lastName}, {firstName}
+      </a>
     </li>
   {/each}
 </ul>
