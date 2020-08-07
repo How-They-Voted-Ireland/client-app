@@ -33,25 +33,40 @@
   export let votes;
 </script>
 
-<style>
+<style lang="scss">
+@import '../../style/mixins.scss';
+
   .app {
     display: flex;
     flex-direction: row;
     height: 100%;
     max-width: 1280px;
     margin: 0 auto;
+
+    @include mobile {
+      flex-direction: column;
+      overflow-y: scroll;
+    }
   }
 
   .profile {
     width: 30%;
     margin-right: 10px;
     padding: 5px;
+
+    @include mobile {
+      width: 100%;
+    }
   }
 
   .votes {
     overflow-y: scroll;
     margin: 5px 0;
     padding: 0 5px;
+
+    @include mobile {
+      overflow-y: revert;
+    }
   }
 
   li {

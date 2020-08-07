@@ -57,6 +57,12 @@
 		overflow-y: scroll;
 	}
 
+	.map {
+		@include mobile {
+			display: none;
+		}
+	}
+
 	.constituency-map-control {
 		display: flex;
 		flex-direction: column;
@@ -66,13 +72,8 @@
 	}
 </style>
 
-<div class="app" bind:clientWidth={appWidth}>
+<div class="app">
 	<section class="filters">
-<!-- 		{#if appWidth <= 640}
-			<div class="show-map-button">
-				<MapButton />
-			</div>
-		{/if} -->
 		<div class="constituency-select-control">
 			<SelectConstituency />
 		</div>
@@ -81,13 +82,11 @@
 		</div>
 	</section>
 	<div class="main-elements">
-		{#if appWidth > 640}
 			<section class="map">
 				<div class="constituency-map-control">
 					<Map />
 				</div>		
 			</section>
-		{/if}
 		<section class="members-list">
 			<MembersList />
 		</section>

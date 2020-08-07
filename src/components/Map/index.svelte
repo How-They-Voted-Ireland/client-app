@@ -4,9 +4,7 @@
 
   const setConstituency = event => {
     selectedConstituency.set(event.target.id);
-  }
-
-  $selectedConstituency;
+  };
 </script>
 
 <style lang="scss">
@@ -33,11 +31,11 @@
       <path
         d={svgPath}
         {id}
-        transform={!noTransform ? "scale(0.26458333)" : null}
+        transform={ !noTransform ? 'scale(0.26458333)' : null }
         class:selected={
-          id === $selectedConstituency
-          || $selectedConstituency === 'dublin' && (id.includes('dún') || id.includes('dub'))
-          || ($selectedConstituency.includes('dún') || $selectedConstituency.includes('dub')) && id === 'dublin'
+          id === $selectedConstituency ||
+          ($selectedConstituency === 'dublin' && (id.includes('dún') || id.includes('dub'))) ||
+          (($selectedConstituency.includes('dún') || $selectedConstituency.includes('dub')) && id === 'dublin')
         }
         on:click={setConstituency}
       />
