@@ -4,30 +4,29 @@
 
   let filteredMembers = [...members];
 
-  selectedConstituency.subscribe(value => {
-    if (!value) {
-      filteredMembers = [...members];
-      return true;
-    }
-
-    filteredMembers = members.filter(({ constituencyCode }) => {
+  const filterMembers = () => {
+    filteredMembers = members.filter(({ fullName }) => {
+      return fullName.toLowerCase().includes($currentSearch.toLowerCase());
+    }).filter(({ constituencyCode }) => {
       const code = constituencyCode.toLowerCase();
+      const value = $selectedConstituency;
+
+      if (!value) {
+        return true;
+      };
 
       return value === code ||
         (value === 'dublin' && (code.includes('dún') || code.includes('dub'))) ||
         ((value.includes('dún') || value.includes('dub')) && code === 'dublin');
     });
+  };
+
+  selectedConstituency.subscribe(value => {
+    filterMembers();
   });
   
   currentSearch.subscribe(value => {
-    if (!value) {
-      filteredMembers = [...members];
-      return true;
-    }
-
-    filteredMembers = members.filter(({ fullName }) => (
-      fullName.toLowerCase().includes(value.toLowerCase()))
-    );
+    filterMembers();
   });
 </script>
 
