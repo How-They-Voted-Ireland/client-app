@@ -45,7 +45,7 @@
     How They Voted
   </div>
   <div class="site-contact">
-    <a href="https://github.com/How-They-Voted">Github</a> | 
+    <a href="https://github.com/How-They-Voted-Ireland">Github</a> | 
     <a href="mailto:info@howtheyvoted.ie">info@howtheyvoted.ie</a>
   </div>
 </footer>
