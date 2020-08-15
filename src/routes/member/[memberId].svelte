@@ -78,10 +78,12 @@
     }
   }
 
-  .back-button {
-    display: block;
-    font-size: 1.4rem;
-    margin-bottom: 20px;
+  .external-link {
+    font-size: .8rem;
+    margin-top: 20px;
+    a {
+      text-decoration: none;
+    } 
   }
 </style>
 
@@ -91,16 +93,20 @@
 
 <div class="app">
   <div class="profile">
-    <a href="/" title="Go back to list of TDs" class="back-button">BACK</a>
     <h2>{member.fullName}</h2>
-    <p>Constituency: {member.constituencyName}</p>
-    <p>Party: {member.partyName}</p>
-    <a href="https://www.oireachtas.ie/en/members/member/{member.memberCode}" title="Link to TDs Dail profile - external" target="_blank">Dail profile</a>
+    <p>{member.partyName}</p>
+    <p>{member.constituencyName}</p>
+    <p class="external-link">
+      <a href="https://www.oireachtas.ie/en/members/member/{member.memberCode}" title="Link to TDs Dail profile - external" target="_blank">Dail profile</a>
+    </p>
+    <p>
+      <a href="/" title="Back to filter screen">Back</a>
+    </p>
   </div>
   <div class="votes">
     <ul>
       {#each votes as vote, index}
-        <li class:alternate={ (index % 2) }>
+        <li class:alternate={ index % 2 }>
           {vote.date} - {vote.name || vote.title} - Voted: {vote.choice}<br>
           {vote.description}<br>
           Status of motion - {vote.status}<br>

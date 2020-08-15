@@ -7,7 +7,13 @@
   }
 
   header {
-    text-align: center;
+    h1 {
+      text-align: center;
+    }
+    
+    a {
+      text-decoration: none;
+    }
   }
 
   footer {
@@ -29,11 +35,11 @@
 
 <svelte:head>
   <title>How They Voted</title>
-  <meta name="description" content="Under development - An app to allow Irish people to easily see how their TDs have voted on bills in the Dáil">
+  <meta name="description" content="An app to easily see how their TDs have voted in the Dáil">
 </svelte:head>
 
 <header>
-  <h1>How They Voted</h1>
+  <a href="/" title="Home screen"><h1>How They Voted</h1></a>
 </header>
 
 <main>
