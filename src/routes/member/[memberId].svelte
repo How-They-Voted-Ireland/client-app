@@ -70,7 +70,12 @@
   }
 
   li {
-    padding: 5px 0;
+    margin: 10px 0;
+    padding: 5px;
+
+    &.alternate {
+      background-color: var(--primary-light);
+    }
   }
 
   .back-button {
@@ -94,8 +99,8 @@
   </div>
   <div class="votes">
     <ul>
-      {#each votes as vote}
-        <li>
+      {#each votes as vote, index}
+        <li class:alternate={ (index % 2) }>
           {vote.date} - {vote.name || vote.title} - Voted: {vote.choice}<br>
           {vote.description}<br>
           Status of motion - {vote.status}<br>
