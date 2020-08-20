@@ -22,6 +22,12 @@ Unless specified all data comes from [House of the Oireachtas - Open Data](https
 
 ## Contribute
 
+### Before contributing
+
+Please check out the [Code of Conduct](https://github.com/How-They-Voted-Ireland/organisation-files/blob/master/CODE_OF_CONDUCT) and the [Contributing Guide](https://github.com/How-They-Voted-Ireland/organisation-files/blob/master/CONTRIBUTING.md)
+
+In short - Be nice :D plus use the repo's issues to identify contributions that are needed or to propose an idea. Thanks.
+
 ### Content
 
 The app will feature a list of Dail debates and bills. These are often difficult to read and understand without context. Contributions are sought for simplified, unbiased explanations of these along with classification into categories such as health, housing, childcare, policing, etc...
@@ -29,6 +35,10 @@ The app will feature a list of Dail debates and bills. These are often difficult
 ### Code
 
 If you are interested in getting involved in the development of this app get in touch - [info@howtheyvoted.ie](mailto:info@howtheyvoted.ie)
+
+### Design
+
+Design of the app and systems has not been worked on yet so any contributions to it are welcome.
 
 ## Resources
 
